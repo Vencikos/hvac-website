@@ -35,6 +35,10 @@
       crossorigin="anonymous"
     />
 
+    <!-- AOS animations link -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Custom CSS link -->
 
     <link rel="stylesheet" href="style.css" />
@@ -73,6 +77,14 @@
     <meta property="fb:admins" content="Facebook numeric ID" /> -->
   </head>
   <body>
+    <!-- Loader -->
+
+    <div class="loader">
+      <div class="triple-spinner"></div>
+    </div>
+
+    <!-- Navbar -->
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0">
       <div class="container-fluid pe-0">
         <a class="navbar-brand" href="#">ВЕНТА ДК</a>
@@ -110,8 +122,6 @@
       </div>
     </nav>
 
-    <!-- Loader -->
-
     <!-- Wrapper -->
     <div class="container front-page">
       <div class="row mx-5">
@@ -119,14 +129,22 @@
           <div class="row">
             <div class="row">
               <div class="col">
-                <h1 class="animate__animated animate__fadeInRight">
+                <h1
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                  data-aos-delay="1000"
+                >
                   КЛИМАТ В РАВНОВЕСИЕ
                 </h1>
               </div>
             </div>
             <div class="row">
               <div class="col">
-                <h4 class="animate__animated animate__fadeInRight my-3">
+                <h4
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                  data-aos-delay="1000"
+                >
                   Проектиране, доставка, монтаж и сервиз на отоплителни,
                   вентилационни и климатични инсталации.
                 </h4>
@@ -136,7 +154,10 @@
               <div class="col-3">
                 <button
                   type="button"
-                  class="btn btn-outline-dark animate__animated animate__fadeInRight"
+                  class="btn btn-outline-dark"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                  data-aos-delay="1000"
                 >
                   НАУЧЕТЕ ПОВЕЧЕ
                 </button>
@@ -145,10 +166,45 @@
           </div>
         </div>
         <div class="col-4">
-          <div class="column">
+          <div class="row">
+            <div
+              class="col-6 top-left"
+              data-aos="slide-down"
+              data-aos-duration="2000"
+            >
+              <img src="/Images/Logo/Untitled-1.png" alt="" />
+            </div>
+            <div
+              class="col-6 top-right"
+              data-aos="slide-left"
+              data-aos-duration="2000"
+            >
+              <img src="/Images/Logo/Untitled-2.png" alt="" />
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-6 bottom-left"
+              data-aos="slide-right"
+              data-aos-duration="2000"
+            >
+              <img src="/Images/Logo/Untitled-4.png" alt="" />
+            </div>
+            <div
+              class="col-6 bottom-right"
+              data-aos="slide-up"
+              data-aos-duration="2000"
+            >
+              <img src="/Images/Logo/Untitled-3.png" alt="" />
+            </div>
+          </div>
+          <!-- <div class="column">
             <div class="row boxes">
               <div
-                class="col-6 icon-heating text-center animate__animated animate__fadeInRight animate__delay-1s"
+                class="col-6 icon-heating text-center"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-delay="1000"
               >
                 <a href="#services-heating" role="button">
                   <img src="/Images/ventilation.png" class="img-fluid" alt="" />
@@ -156,7 +212,10 @@
                 </a>
               </div>
               <div
-                class="col-6 icon-ventilation text-center animate__animated animate__fadeInRight animate__delay-2s"
+                class="col-6 icon-ventilation text-center"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-delay="1000"
               >
                 <a href="#services-ventilation" class="">
                   <img src="/Images/ventilation.png" class="img-fluid" alt="" />
@@ -164,7 +223,10 @@
                 </a>
               </div>
               <div
-                class="col-6 icon-air-conditioning text-center animate__animated animate__fadeInRight animate__delay-3s"
+                class="col-6 icon-air-conditioning text-center"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-delay="1000"
               >
                 <a href="#services-air-conditioning" class="">
                   <img src="/Images/ventilation.png" class="img-fluid" alt="" />
@@ -172,7 +234,10 @@
                 </a>
               </div>
               <div
-                class="col-6 icon-service text-center animate__animated animate__fadeInRight animate__delay-4s"
+                class="col-6 icon-service text-center"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                data-aos-delay="1000"
               >
                 <a href="#services-service" class="">
                   <img src="/Images/ventilation.png" class="img-fluid" alt="" />
@@ -180,7 +245,7 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -189,25 +254,44 @@
 
     <div class="container">
       <div class="row gx-0">
-        <div class="four col-md-3 pe-0">
+        <div
+          class="four col-md-3 pe-0"
+          data-aos="fade-in"
+          data-aos-duration="2000"
+        >
           <div class="counter-box">
             <i class="fa fa-thumbs-o-up"></i> <span class="counter">2147</span>
             <p>Доволни клиенти</p>
           </div>
         </div>
-        <div class="four col-md-3 pe-0">
+        <div
+          class="four col-md-3 pe-0"
+          data-aos="fade-in"
+          data-aos-delay="500"
+          data-aos-duration="2000"
+        >
           <div class="counter-box border-left">
             <i class="fa fa-group"></i> <span class="counter">3275</span>
             <p>Завършени обекти</p>
           </div>
         </div>
-        <div class="four col-md-3 pe-0">
+        <div
+          class="four col-md-3 pe-0"
+          data-aos="fade-in"
+          data-aos-delay="1000"
+          data-aos-duration="2000"
+        >
           <div class="counter-box border-left">
             <i class="fa fa-shopping-cart"></i> <span class="counter">289</span>
             <p>Available Products</p>
           </div>
         </div>
-        <div class="four col-md-3 pe-0">
+        <div
+          class="four col-md-3 pe-0"
+          data-aos="fade-in"
+          data-aos-delay="1500"
+          data-aos-duration="2000"
+        >
           <div class="counter-box border-left">
             <i class="fa fa-user"></i> <span class="counter">1563</span>
             <p>Saved Trees</p>
@@ -216,159 +300,261 @@
       </div>
     </div>
 
+    <!-- Scroll icon -->
+
     <!-- Partners carousel -->
-    <div class="container partners">
-      <h2 class="text-center">Our partners</h2>
-      <div class="logo-slider">
-        <div class="logo-slide-track">
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/carrier.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/midea.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/gree.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/daikin.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/toshiba.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/mitsubishi.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/viessmann.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/carrier.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/midea.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/gree.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/daikin.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/toshiba.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/mitsubishi.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/viessmann.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/carrier.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/midea.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/gree.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/daikin.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/toshiba.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/mitsubishi.png"
-              class="centered"
-              alt=""
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="/Images/Partners-logos/resized/viessmann.png"
-              class="centered"
-              alt=""
-            />
+    <div id="partners">
+      <div class="container">
+        <h2 class="text-center">Our partners</h2>
+        <div class="logo-slider">
+          <div class="logo-slide-track">
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/carrier.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/midea.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/gree.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/daikin.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/toshiba.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/mitsubishi.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/viessmann.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/carrier.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/midea.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/gree.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/daikin.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/toshiba.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/mitsubishi.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/viessmann.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/carrier.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/midea.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/gree.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/daikin.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/toshiba.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/mitsubishi.png"
+                class="centered"
+                alt=""
+              />
+            </div>
+            <div class="slide">
+              <img
+                src="/Images/Partners-logos/resized/viessmann.png"
+                class="centered"
+                alt=""
+              />
+            </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- About -->
+
+    <div class="container">
+      <div class="main-timeline">
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
+          <div class="date-content">
+            <div class="date-outer">
+              <span class="date">
+                <span class="month">2 Years</span>
+                <span class="year">2013</span>
+              </span>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <h5 class="title">Visual Art &amp; Design</h5>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
+              volutpat. Aenean interdum finibus efficitur. Praesent dapibus
+              dolor felis, eu ultrices elit molestie.
+            </p>
+          </div>
+        </div>
+        <!-- end experience section-->
+
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
+          <div class="date-content">
+            <div class="date-outer">
+              <span class="date">
+                <span class="month">1 Years</span>
+                <span class="year">2015</span>
+              </span>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <h5 class="title">Product Designer</h5>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
+              volutpat. Aenean interdum finibus efficitur. Praesent dapibus
+              dolor felis, eu ultrices elit molestie.
+            </p>
+          </div>
+        </div>
+        <!-- end experience section-->
+
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
+          <div class="date-content">
+            <div class="date-outer">
+              <span class="date">
+                <span class="month">2 Years</span>
+                <span class="year">2016</span>
+              </span>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <h5 class="title">Web Designer</h5>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
+              volutpat. Aenean interdum finibus efficitur. Praesent dapibus
+              dolor felis, eu ultrices elit molestie.
+            </p>
+          </div>
+        </div>
+        <!-- end experience section-->
+
+        <!-- start experience section-->
+        <div class="timeline">
+          <div class="icon"></div>
+          <div class="date-content">
+            <div class="date-outer">
+              <span class="date">
+                <span class="month">2 Years</span>
+                <span class="year">2018</span>
+              </span>
+            </div>
+          </div>
+          <div class="timeline-content">
+            <h5 class="title">Graphic Designer</h5>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              efficitur ex sit amet massa scelerisque scelerisque. Aliquam erat
+              volutpat. Aenean interdum finibus efficitur. Praesent dapibus
+              dolor felis, eu ultrices elit molestie.
+            </p>
+          </div>
+        </div>
+        <!-- end experience section-->
       </div>
     </div>
 
@@ -379,9 +565,14 @@
     </a>
 
     <!-- Scripts -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-
-    <!-- <script type="text/javascript" src="/JS/counter.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/JS/counter.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script type="text/javascript" src="/JS/to-the-top-arrow.js"></script>
+    <script src="/JS/loader.js"></script>
+    <script src="/JS/reload.js"></script>
   </body>
 </html>
